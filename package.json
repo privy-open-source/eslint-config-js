@@ -1,10 +1,12 @@
 {
   "name": "eslint-config-adenvt",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "My Eslint Configuration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "lint": "eslint -c ./index.js ./*.js",
+    "fix": "eslint -c ./index.js ./*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,7 @@
   },
   "homepage": "https://github.com/adenvt/eslint-config-adenvt#readme",
   "devDependencies": {
-    "eslint": "^5.1.0",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^6.0.1",
@@ -35,7 +37,7 @@
     "eslint-plugin-vue": "^4.5.0"
   },
   "peerDependencies": {
-    "eslint": ">=5.1.0",
+    "eslint": ">=4.0.0",
     "eslint-config-standard": ">=11.0.0",
     "eslint-plugin-import": ">=2.13.0",
     "eslint-plugin-node": ">=6.0.1",
