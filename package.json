@@ -1,0 +1,51 @@
+{
+  "name": "eslint-config-adenvt",
+  "version": "1.0.0",
+  "description": "My Eslint Configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint -c ./index.js ./*.js",
+    "fix": "eslint -c ./index.js ./*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adenvt/eslint-config-adenvt.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": {
+    "name": "Ade Novid",
+    "email": "adenvt@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adenvt/eslint-config-adenvt/issues"
+  },
+  "homepage": "https://github.com/adenvt/eslint-config-adenvt#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-unicorn": "^4.0.3",
+    "eslint-plugin-varspacing": "^1.2.1",
+    "eslint-plugin-vue": "^4.5.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.0.0",
+    "eslint-config-standard": ">=11.0.0",
+    "eslint-plugin-import": ">=2.13.0",
+    "eslint-plugin-node": ">=6.0.1",
+    "eslint-plugin-promise": ">=3.8.0",
+    "eslint-plugin-standard": ">=3.1.0",
+    "eslint-plugin-unicorn": ">=4.0.3",
+    "eslint-plugin-varspacing": ">=1.2.1",
+    "eslint-plugin-vue": ">=4.5.0"
+  },
+  "dependencies": {}
+}
