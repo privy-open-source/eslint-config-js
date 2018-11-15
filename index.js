@@ -74,6 +74,6 @@ module.exports = {
       files: ['*.spec.js'],
       env  : { node: true },
       rules: { 'no-console': 'off' },
-    }
+    },
   ],
 }
