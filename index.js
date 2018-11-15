@@ -58,6 +58,8 @@ module.exports = {
         },
       },
     ],
+    'arrow-parens'            : ['error', 'always'],
+    'operator-linebreak'      : ['error', 'before'],
     'vue/require-default-prop': 'off',
     'vue/require-prop-types'  : 'off',
     'vue/prop-name-casing'    : ['error', 'camelCase'],
@@ -68,5 +70,10 @@ module.exports = {
       files: ['*.vue'],
       rules: { 'unicorn/filename-case': ['error', { case: 'pascalCase' }] },
     },
+    {
+      files: ['*.spec.js'],
+      env  : { node: true },
+      rules: { 'no-console': 'off' },
+    }
   ],
 }
