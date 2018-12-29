@@ -5,9 +5,10 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:varspacing/recommended',
   ],
-  plugins: ['unicorn', 'varspacing'],
-  env    : { es6: true },
-  rules  : {
+  plugins      : ['unicorn', 'varspacing'],
+  env          : { es6: true },
+  parserOptions: { parser: 'babel-eslint' },
+  rules        : {
     'curly'                : ['error', 'multi-or-nest'],
     'array-element-newline': ['error', { multiline: true, minItems: 3 }],
     'array-bracket-newline': [
@@ -42,12 +43,12 @@ module.exports = {
       },
     ],
     'no-var'              : 'error',
+    'prefer-template'     : 'error',
+    'linebreak-style'     : 'off',
     'no-console'          : ['error', { allow: ['warn', 'error'] }],
     'prefer-const'        : ['error', { destructuring: 'all' }],
     'quote-props'         : ['error', 'consistent-as-needed'],
-    'prefer-template'     : 'error',
     'object-curly-spacing': ['error', 'always'],
-    'linebreak-style'     : 'off',
     'key-spacing'         : [
       'error',
       {
@@ -58,12 +59,13 @@ module.exports = {
         },
       },
     ],
-    'arrow-parens'            : ['error', 'always'],
-    'operator-linebreak'      : ['error', 'before'],
-    'vue/require-default-prop': 'off',
-    'vue/require-prop-types'  : 'off',
-    'vue/prop-name-casing'    : ['error', 'camelCase'],
-    'unicorn/catch-error-name': ['error', { name: 'err' }],
+    'arrow-parens'                         : ['error', 'always'],
+    'operator-linebreak'                   : ['error', 'before'],
+    'vue/require-default-prop'             : 'off',
+    'vue/require-prop-types'               : 'off',
+    'vue/prop-name-casing'                 : ['error', 'camelCase'],
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'unicorn/catch-error-name'             : ['error', { name: 'err' }],
   },
   overrides: [
     {
