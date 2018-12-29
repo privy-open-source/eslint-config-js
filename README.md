@@ -8,7 +8,7 @@
 First, run this command
 
 ```
-npm install --save-dev eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-unicorn eslint-plugin-varspacing eslint-plugin-vue eslint-config-adenvt
+npm install --save-dev eslint babel-eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-unicorn eslint-plugin-varspacing eslint-plugin-vue eslint-config-adenvt
 ```
 Then, add this to your `.eslintrc` file:
 
