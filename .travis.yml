@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- latest
-- '10'
+- node
+- lts/*
 - '8'
 before_script:
 - git clone https://github.com/adenvt/laravel-coreui-vue.git --depth=1 test/
