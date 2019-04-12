@@ -7,7 +7,7 @@ before_script:
 - git clone https://github.com/adenvt/laravel-coreui-vue.git --depth=1 test/
 - rm test/.eslintrc
 script:
-- npm test
+- npm run test:fix
 deploy:
   provider: npm
   email: adenvt@gmail.com
