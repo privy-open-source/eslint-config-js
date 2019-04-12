@@ -3,11 +3,8 @@ node_js:
 - node
 - lts/*
 - '8'
-before_script:
-- git clone https://github.com/adenvt/laravel-coreui-vue.git --depth=1 test/
-- rm test/.eslintrc
 script:
-- npm run test:fix
+- npm run test
 deploy:
   provider: npm
   email: adenvt@gmail.com

@@ -4,10 +4,11 @@
   "description": "My Eslint Configuration",
   "main": "index.js",
   "scripts": {
-    "test": "bash ./script/test.sh",
-    "test:fix": "bash ./script/fix.sh",
+    "test": "npm run lint",
     "lint": "eslint -c ./index.js ./*.js",
-    "fix": "eslint -c ./index.js ./*.js --fix"
+    "fix": "eslint -c ./index.js ./*.js --fix",
+    "test:lint": "bash ./script/lint.sh",
+    "test:fix": "bash ./script/fix.sh"
   },
   "repository": {
     "type": "git",
