@@ -1,6 +1,7 @@
 # eslint-config-adenvt
 > Eslint Shareable Config which lint and pretify your code
 
+[![Build Status](https://travis-ci.com/adenvt/eslint-config-adenvt.svg?branch=master)](https://travis-ci.com/adenvt/eslint-config-adenvt)
 [![npm version](https://badge.fury.io/js/eslint-config-adenvt.svg)](https://badge.fury.io/js/eslint-config-adenvt)
 
 ## Usage

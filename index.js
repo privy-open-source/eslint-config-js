@@ -65,7 +65,8 @@ module.exports = {
     'vue/require-prop-types'               : 'off',
     'vue/prop-name-casing'                 : ['error', 'camelCase'],
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-    'unicorn/catch-error-name'             : ['error', { name: 'err' }],
+    'unicorn/catch-error-name'             : ['error', { name: 'error' }],
+    'unicorn/prevent-abbreviations'        : ['error', { checkProperties: false }],
   },
   overrides: [
     {
@@ -74,7 +75,7 @@ module.exports = {
     },
     {
       files: ['*.spec.js'],
-      env  : { node: true },
+      env  : { node: true, mocha: true },
       rules: { 'no-console': 'off' },
     },
   ],

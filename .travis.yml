@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+- lts/*
+- '8'
+script:
+- npm run test
+deploy:
+  provider: npm
+  email: adenvt@gmail.com
+  api_key:
+    secure: yDrwETxEn7rjYVnZd3PgJdm8acfkkx2mGudvnQSjORU8Z46Vygshqf5XjtBh9swTIl0DpP6N30yfe5i+7jI3pa1Zx9msGhqZuSFtyDes6A6FTbuEq1yHbr+DscN6svn6NUiUGL8hcXQMvzAbTeRgG/CI/YQSGfCsy1KazQUdRcsmjEjiuhnx36MOL9ZzjTBASc55i6iK6Oc5iw+ycvmel/+EAKz/EAettBnPI3ANAUKAOfExfzmUIv/h81cbVoBMKbU73a817BY7WoZ+l39gzR167z4b5o3qXgoId5rUduHxv9HAXGynBaC6Ukm0QC9/7nJ61PIXKGCjA6tXD3IH1O9uFBWJ8bMJ7rkMbjtSCCgARYX2VqjMTwXi0HFptfhAswuYK1P2Ajtdq/zP1WgThDOa1i/HPmdt4e7nUeMehby6YdNKrYFAwDUmk6/PmFHqn0vWshyrdu6wl7aGzfPlqybIDWg51has1KQ6A+xZ0ujKmEPJE+MxM+6SGdIi3JvR1cxEkI6mgCHKPCRftptCjJz4ESPAvifzIjC4ezwQyU/WXXvfGRc78KMZRUYY1omed+1+5xhQNyu2bKOUWAfB5fAjATcs6LD8WOzhUVuP1PaeDdSWASJ9aVLMBDh0ZZNIeuDH1YSDiZxEthZF46/tKnVPxvnKnQGhXzVeCtddhVE=
+  on:
+    tags: true
+    repo: adenvt/eslint-config-adenvt
