@@ -7,7 +7,8 @@ module.exports = {
   ],
   plugins      : ['unicorn', 'varspacing'],
   env          : { es6: true },
-  parserOptions: { parser: 'babel-eslint' },
+  parser       : 'vue-eslint-parser',
+  parserOptions: { parser: 'babel-eslint', sourceType: 'module' },
   rules        : {
     'curly'                : ['error', 'multi-or-nest'],
     'array-element-newline': ['error', { multiline: true, minItems: 3 }],
@@ -65,8 +66,22 @@ module.exports = {
     'vue/require-prop-types'               : 'off',
     'vue/prop-name-casing'                 : ['error', 'camelCase'],
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-    'unicorn/catch-error-name'             : ['error', { name: 'error' }],
-    'unicorn/prevent-abbreviations'        : ['error', { checkProperties: false }],
+    'vue/html-closing-bracket-newline'     : [
+      'error',
+      {
+        singleline: 'never',
+        multiline : 'never',
+      },
+    ],
+    'unicorn/catch-error-name'     : ['error', { name: 'error' }],
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        checkProperties         : false,
+        checkShorthandProperties: false,
+        whitelist               : { getErrMsg: true },
+      },
+    ],
   },
   overrides: [
     {
@@ -77,6 +92,10 @@ module.exports = {
       files: ['*.spec.js'],
       env  : { node: true, mocha: true },
       rules: { 'no-console': 'off' },
+    },
+    {
+      files: ['pages/**/*.vue', 'layouts/**/*.vue'],
+      rules: { 'unicorn/filename-case': ['error', { case: 'kebabCase' }] },
     },
   ],
 }
