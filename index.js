@@ -73,13 +73,14 @@ module.exports = {
         multiline : 'never',
       },
     ],
+    'unicorn/prefer-module'        : 'off',
     'unicorn/catch-error-name'     : ['error', { name: 'error' }],
     'unicorn/prevent-abbreviations': [
       'error',
       {
         checkProperties         : false,
         checkShorthandProperties: false,
-        whitelist               : { getErrMsg: true },
+        allowList               : { getErrMsg: true },
       },
     ],
   },
