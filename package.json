@@ -12,7 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adenvt/eslint-config-adenvt.git"
+    "url": "git+https://github.com/privy-open-source/eslint-config-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "eslint",
@@ -24,9 +27,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adenvt/eslint-config-adenvt/issues"
+    "url": "https://github.com/privy-open-source/eslint-config-js/issues"
   },
-  "homepage": "https://github.com/adenvt/eslint-config-adenvt#readme",
+  "homepage": "https://github.com/privy-open-source/eslint-config-js#readme",
   "devDependencies": {
     "babel-eslint": ">=10.1.0",
     "eslint": ">=7.32.0",
